@@ -5,17 +5,18 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions = [
   "What is the title of your project?", //0 title
-  "What was your motivation for this project?", //1 description1
-  "Why did you build this project?", //2 description2
-  "What problem does it solve?", //3 description3
-  "What did you learn?", //4 description4
-  "Provide instructions and examples for use.", //5 usage
-  "What are the steps required to install your project?", //6 installation
-  "Which license does this project use?", //7 license
-  "Please list any collaborators with links to their Github page.", //8 credits
-  "Specify any tests used for this application.", //9 testing
-  "Please print your Github username:", //10 github
-  "What is your e-mail address?", //11 email
+  "Please provide your project's deployed link.", //1 urllink
+  "What was your motivation for this project?", //2 description1
+  "Why did you build this project?", //3 description2
+  "What problem does it solve?", //4 description3
+  "What did you learn?", //5 description4
+  "Provide instructions and examples for use.", //6 usage
+  "What are the steps required to install your project?", //7 installation
+  "Which license does this project use?", //8 license
+  "Please list any collaborators with links to their Github page.", //9 credits
+  "Specify any tests used for this application.", //10 testing
+  "Please print your Github username:", //11 github
+  "What is your e-mail address?", //12 email
 ];
 
 // TODO: Create a function to write README file
@@ -30,36 +31,41 @@ function writeToFile(fileName, data) {
       {
         type: "input",
         message: questions[1],
-        name: "description1",
+        name: "urllink",
       },
       {
         type: "input",
         message: questions[2],
-        name: "description2",
+        name: "description1",
       },
       {
         type: "input",
         message: questions[3],
-        name: "description3",
+        name: "description2",
       },
       {
         type: "input",
         message: questions[4],
-        name: "description4",
+        name: "description3",
       },
       {
         type: "input",
         message: questions[5],
-        name: "usage",
+        name: "description4",
       },
       {
         type: "input",
         message: questions[6],
+        name: "usage",
+      },
+      {
+        type: "input",
+        message: questions[7],
         name: "installation",
       },
       {
         type: "list",
-        message: questions[7],
+        message: questions[8],
         choices: [
           "Apache 2.0",
           "GNU GPLv3",
@@ -72,29 +78,29 @@ function writeToFile(fileName, data) {
       },
       {
         type: "input",
-        message: questions[8],
+        message: questions[9],
         name: "credits",
       },
       {
         type: "input",
-        message: questions[9],
+        message: questions[10],
         name: "testing",
       },
       {
         type: "input",
-        message: questions[10],
+        message: questions[11],
         name: "github",
       },
       {
         type: "input",
-        message: questions[11],
+        message: questions[12],
         name: "email",
       },
     ])
-    .then((answers) => {
-      const getMarkdown = generateMarkdown(answers);
+    .then((data) => {
+      const getMarkdown = generateMarkdown(data);
       fs.writeFile("./outputReadMe/README.md", getMarkdown, (err) =>
-        error
+        err
           ? console.error("Something went wrong.")
           : console.log("Successfully created README.md!")
       );
