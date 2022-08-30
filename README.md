@@ -1,15 +1,19 @@
 # README Generator
 
+## Video Link: https://drive.google.com/file/d/1Bc22zzO3C1ItToOxBkwK4H_tykK5W3za/view
+
 ## Link
 
-## https://github.com/dylangriess/generate-readme
+> https://dylangriess.github.io/generate-readme/
+
+---
 
 ## Description
 
-This project was created to generate a high-quality, professional README.md file based on user input.
-I built this project to ease the process of generating a new README.md file for each homework project and future project I am working on.
-It solves the mundane task of creating each file from scratch.
-I learned how to use node.js using the Inquirer package.
+> My motivation for this project was to skip the process of making a new readme.md file for every project I am working on.
+> I built this project to dynamically create a high-quality, professional style readme that could be presented to future projects automatically.
+> It solves the hassle of creating a new readme from scratch, while potentially losing its quality.
+> I learned how to use node.js with the inquirer package to take user input from provided prompts to make a markdown page.
 
 ---
 
@@ -26,28 +30,36 @@ I learned how to use node.js using the Inquirer package.
 
 ## Installation
 
-Node.js and Inquirer are required for this project installment.
+> After installing node.js, you will be provided with user prompts to generate your readme.md file.
+
+---
 
 ## Usage
 
-Users will input their data with prompts provided through the writeFile function.
+> Type ‘node index.js’ to initiate the README Generator application from your terminal after changing to the correct directory.
+
+---
 
 ## Licensing
 
-This project is licensed under
+> This project is licensed under Apache 2.0.
+> For details, please visit:
 
-For details, please visit:
+---
 
 ## Contributing
 
-I learned how to use this application from the help of my professor, TA's, and classmates.
+> I learned how to make this project through my instructor, TA’s, tutors, and classmates.
+
+---
 
 ## Tests
 
-N/A
+> Tests TBD
+
+---
 
 ## Questions
 
-Visit my GitHub page: [https://github.com/dylangriess](https://github.com/https://github.com/dylangriess)
-
-Email me at: [dylangriess@gmail.com](dylangriess@gmail.com)
+> Visit my GitHub page: [https://github.com/dylangriess](https://github.com/https://github.com/dylangriess)  
+> Email me at: [dylangriess@gmail.com](dylangriess@gmail.com)
