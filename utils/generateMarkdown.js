@@ -2,36 +2,23 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let licenseValue = license;
-  console.log(licenseValue);
-  let message = "";
-  let color = "";
   let renderBadge = "";
   // Switch statement generates value of label, message, color & adds them to URL
   switch (licenseValue) {
-    case "Apache License 2.0":
-      message = "Apache_2.0";
-      color = "yellowgreen";
-      renderBadge = `![License](https://img.shields.io/badge/license-${message}-${color})`;
+    case "Apache 2.0":
+      renderBadge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
       break;
     case "GNU GPL v3":
-      message = "GPLv3";
-      color = "blue";
-      renderBadge = `![License: GPL v3](https://img.shields.io/badge/license-${message}-${color})`;
+      renderBadge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
       break;
     case "GNU GPL v2":
-      message = "GPL_v2";
-      color = "blue";
-      renderBadge = `![License: GPL v2](https://img.shields.io/badge/license-${message}-${color})`;
+      renderBadge = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;
       break;
     case "MIT":
-      message = "MIT";
-      color = "yellow";
-      renderBadge = `![License: MIT](https://img.shields.io/badge/license-${message}-${color})`;
+      renderBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
       break;
     case "ISC":
-      message = "ISC";
-      color = "blue";
-      renderBadge = ` ![License: ISC](https://img.shields.io/badge/license-${message}-${color})`;
+      renderBadge = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`;
       break;
     default:
       return "No license selected.";

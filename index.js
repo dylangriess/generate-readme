@@ -68,8 +68,8 @@ function writeToFile(fileName, data) {
         message: questions[8],
         choices: [
           "Apache 2.0",
-          "GNU GPLv3",
-          "GNU GPLv2",
+          "GNU GPL v3",
+          "GNU GPL v2",
           "MIT",
           "ISC",
           "None of the above (If selected, enter manually)",
