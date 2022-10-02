@@ -78,8 +78,8 @@ ${renderLicenseBadge(data.license)}
 ---
 ## Table of Contents   
 
-- [Usage](#usage)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Licensing](#licensing)
 - [Contributing](#contributing)
 - [Tests](#tests)
